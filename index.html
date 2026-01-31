@@ -2,172 +2,39 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Social App - القادم بقوة</title>
-    
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="theme-color" content="#007bff">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقعي الربحي الأول</title>
 
-    <style>
-        :root {
-            --primary: #007bff;
-            --bg: #f0f2f5;
-            --white: #ffffff;
-        }
-
-        body {
-            margin: 0;
-            font-family: -apple-system, system-ui, sans-serif;
-            background-color: var(--bg);
-            padding-bottom: 60px; /* لمكان شريط الأزرار السفلي */
-        }
-
-        /* الهيدر العلوي */
-        .app-header {
-            background: var(--white);
-            padding: 10px 15px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-
-        .logo { color: var(--primary); font-size: 1.5rem; font-weight: bold; }
-
-        /* كرت التنبيه والوقت */
-        .info-card {
-            background: linear-gradient(135deg, #007bff, #00c6ff);
-            color: white;
-            margin: 15px;
-            padding: 20px;
-            border-radius: 15px;
-            text-align: center;
-        }
-
-        .timer {
-            font-size: 2rem;
-            font-weight: bold;
-            background: rgba(255,255,255,0.2);
-            border-radius: 10px;
-            padding: 10px;
-            margin: 10px 0;
-            display: inline-block;
-            min-width: 200px;
-        }
-
-        /* المنشورات الوهمية (لسد الفراغ وإقناع المراجع) */
-        .post {
-            background: var(--white);
-            margin: 15px;
-            border-radius: 12px;
-            padding: 15px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-        }
-
-        .post-user { display: flex; align-items: center; margin-bottom: 10px; }
-        .avatar { width: 40px; height: 40px; background: #ddd; border-radius: 50%; margin-left: 10px; }
-        .user-info { font-weight: bold; font-size: 0.9rem; }
-
-        .post-content { font-size: 1rem; line-height: 1.5; color: #333; }
-
-        .post-actions {
-            border-top: 1px solid #eee;
-            margin-top: 10px;
-            padding-top: 10px;
-            display: flex;
-            justify-content: space-around;
-        }
-
-        .action-btn { color: #65676b; font-size: 0.9rem; cursor: pointer; padding: 5px; }
-        .action-btn:active { color: var(--primary); transform: scale(0.9); }
-
-        /* شريط التنقل السفلي (يجعل الواجهة قوية) */
-        .bottom-nav {
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            background: var(--white);
-            display: flex;
-            justify-content: space-around;
-            padding: 12px 0;
-            border-top: 1px solid #ddd;
-        }
-
-        .nav-item { font-size: 1.2rem; color: #65676b; cursor: pointer; }
-        .nav-item.active { color: var(--primary); }
-    </style>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0000000000000000"
+     crossorigin="anonymous"></script>
 </head>
 <body>
 
-    <div class="app-header">
-        <div class="logo">SocialNext</div>
-        <div style="font-size: 1.2rem;">🔍</div>
+    <header style="text-align: center; padding: 20px; background: #f4f4f4;">
+        <h1>أهلاً بكم في موقعي المتواضع</h1>
+        <p>هذا الموقع قيد التطوير ليكون منصة إعلانية حلال</p>
+    </header>
+
+    <hr>
+
+    <div style="margin: 20px auto; text-align: center;">
+        <p style="font-size: 12px; color: #888;">إعلان</p>
+        
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-0000000000000000" 
+             data-ad-slot="1111111111"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
     </div>
 
-    <div class="info-card">
-        <h3>قريباً: تجربة تواصل جديدة</h3>
-        <p>نحن نطلق المنصة رسمياً خلال:</p>
-        <div class="timer" id="timer">48:00:00</div>
-        <p style="font-size: 0.8rem;">ترقبوا ميزات لم تروها من قبل!</p>
-    </div>
+    <main style="padding: 20px;">
+        <h2>محتوى مفيد</h2>
+        <p>هنا تبدأ بكتابة مقالاتك. جوجل تحب المواقع التي تحتوي على نصوص مفيدة للناس.</p>
+    </main>
 
-    <div class="post">
-        <div class="post-user">
-            <div class="avatar"></div>
-            <div class="user-info">إدارة التطبيق<br><small style="color:#888;">منذ قليل</small></div>
-        </div>
-        <div class="post-content">
-            أهلاً بكم في SocialNext! نحن نعمل حالياً على تحسين الخوادم لضمان تواصل سريع وآمن لجميع المستخدمين.
-        </div>
-        <div class="post-actions">
-            <div class="action-btn" onclick="alert('سيعمل الإعجاب قريباً')">👍 إعجاب</div>
-            <div class="action-btn" onclick="alert('ستعمل التعليقات قريباً')">💬 تعليق</div>
-        </div>
-    </div>
-
-    <div class="post">
-        <div class="post-user">
-            <div class="avatar"></div>
-            <div class="user-info">فريق التطوير<br><small style="color:#888;">منذ ساعة</small></div>
-        </div>
-        <div class="post-content">
-            هل أنتم مستعدون للنسخة الكاملة؟ سيتم إضافة ميزة مشاركة الفيديوهات والقصص (Stories) في التحديث القادم.
-        </div>
-        <div class="post-actions">
-            <div class="action-btn" onclick="alert('سيعمل الإعجاب قريباً')">👍 إعجاب</div>
-            <div class="action-btn" onclick="alert('ستعمل التعليقات قريباً')">💬 تعليق</div>
-        </div>
-    </div>
-
-    <div class="bottom-nav">
-        <div class="nav-item active" onclick="location.reload()">🏠</div>
-        <div class="nav-item" onclick="alert('قائمة الأصدقاء ستتوفر قريباً')">👥</div>
-        <div class="nav-item" onclick="alert('التنبيهات ستتوفر قريباً')">🔔</div>
-        <div class="nav-item" onclick="alert('الملف الشخصي تحت الإعداد')">👤</div>
-    </div>
-
-    <script>
-        // كود المؤقت التنازلي
-        let totalSeconds = 48 * 60 * 60;
-        function updateTimer() {
-            let h = Math.floor(totalSeconds / 3600);
-            let m = Math.floor((totalSeconds % 3600) / 60);
-            let s = totalSeconds % 60;
-            document.getElementById('timer').textContent = 
-                `${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
-            if (totalSeconds > 0) totalSeconds--;
-        }
-        setInterval(updateTimer, 1000);
-
-        // جعل الأزرار تعطي رد فعل عند الضغط لضمان القبول
-        document.querySelectorAll('.nav-item, .action-btn').forEach(btn => {
-            btn.addEventListener('click', function() {
-                // مبروك، الضغط يعمل!
-            });
-        });
-    </script>
 </body>
 </html>
